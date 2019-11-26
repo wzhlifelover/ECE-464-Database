@@ -4,6 +4,8 @@ from base import Base, engine, Session
 
 metadata = MetaData()
 
+#reference from Zhekai Jin for the custom_assert function
+
 #Create ORM
 class Boats(Base):
     __tablename__ = 'boats'
@@ -68,7 +70,7 @@ def test_query7():
 
 if  __name__ == "__main__":
     test_query2()
-    #test_query6()
-    #test_query7()
+    test_query6()
+    test_query7()
     session.commit()
     session.close()
